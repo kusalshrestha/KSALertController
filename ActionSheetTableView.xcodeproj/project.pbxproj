@@ -121,9 +121,9 @@
 		94B1E8CA1CD747F10022B64F /* ActionSheetTableView */ = {
 			isa = PBXGroup;
 			children = (
+				9401CB1A1CD8658C00C637AF /* KSAlert */,
 				94B1E8CB1CD747F10022B64F /* AppDelegate.swift */,
 				94B1E8F91CD748120022B64F /* MainTableViewController.swift */,
-				9401CB1A1CD8658C00C637AF /* KSAlert */,
 				94B1E8CF1CD747F10022B64F /* Main.storyboard */,
 				94B1E8D21CD747F10022B64F /* Assets.xcassets */,
 				94B1E8D41CD747F10022B64F /* LaunchScreen.storyboard */,

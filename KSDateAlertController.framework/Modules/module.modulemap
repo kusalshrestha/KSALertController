@@ -1,0 +1,10 @@
+framework module KSDateAlertController {
+  umbrella header "KSDateAlertController.h"
+
+  export *
+  module * { export * }
+}
+
+module KSDateAlertController.Swift {
+    header "KSDateAlertController-Swift.h"
+}

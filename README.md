@@ -2,6 +2,9 @@
 Alert controller for TableViewcontroller
 
 ## How to use framework
+First import the framework into the project
+Add it to the "Embedded Binaries"
+
 ```sh
 let alertView = KSAlertView()
 alertView.showDialog { (date) in

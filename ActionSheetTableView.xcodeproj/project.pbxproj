@@ -7,9 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9401CB1D1CD865E500C637AF /* KSAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9401CB1B1CD865E500C637AF /* KSAlertView.xib */; };
-		9401CB1E1CD865E500C637AF /* KSDialogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9401CB1C1CD865E500C637AF /* KSDialogView.swift */; };
-		9401CB201CD865ED00C637AF /* KSAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9401CB1F1CD865ED00C637AF /* KSAlertView.swift */; };
+		9466A8231CDB11F200BEB850 /* KSDateAlertController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9466A8221CDB11F200BEB850 /* KSDateAlertController.framework */; };
+		9466A8251CDB11FA00BEB850 /* KSDateAlertController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9466A8221CDB11F200BEB850 /* KSDateAlertController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		94B1E8CC1CD747F10022B64F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B1E8CB1CD747F10022B64F /* AppDelegate.swift */; };
 		94B1E8D11CD747F10022B64F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94B1E8CF1CD747F10022B64F /* Main.storyboard */; };
 		94B1E8D31CD747F10022B64F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94B1E8D21CD747F10022B64F /* Assets.xcassets */; };
@@ -36,10 +35,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		9466A8261CDB11FA00BEB850 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9466A8251CDB11FA00BEB850 /* KSDateAlertController.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		9401CB1B1CD865E500C637AF /* KSAlertView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = KSAlertView.xib; path = KSAlertView/DialogView/KSAlertView.xib; sourceTree = "<group>"; };
-		9401CB1C1CD865E500C637AF /* KSDialogView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KSDialogView.swift; path = KSAlertView/DialogView/KSDialogView.swift; sourceTree = "<group>"; };
-		9401CB1F1CD865ED00C637AF /* KSAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KSAlertView.swift; path = KSAlertView/KSAlertView.swift; sourceTree = "<group>"; };
+		9466A8221CDB11F200BEB850 /* KSDateAlertController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KSDateAlertController.framework; sourceTree = "<group>"; };
 		94B1E8C81CD747F10022B64F /* ActionSheetTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ActionSheetTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94B1E8CB1CD747F10022B64F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94B1E8D01CD747F10022B64F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -60,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9466A8231CDB11F200BEB850 /* KSDateAlertController.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,27 +92,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9401CB181CD8656100C637AF /* DialogAlert */ = {
-			isa = PBXGroup;
-			children = (
-				9401CB1B1CD865E500C637AF /* KSAlertView.xib */,
-				9401CB1C1CD865E500C637AF /* KSDialogView.swift */,
-			);
-			name = DialogAlert;
-			sourceTree = "<group>";
-		};
-		9401CB1A1CD8658C00C637AF /* KSAlert */ = {
-			isa = PBXGroup;
-			children = (
-				9401CB181CD8656100C637AF /* DialogAlert */,
-				9401CB1F1CD865ED00C637AF /* KSAlertView.swift */,
-			);
-			name = KSAlert;
-			sourceTree = "<group>";
-		};
 		94B1E8BF1CD747F10022B64F = {
 			isa = PBXGroup;
 			children = (
+				9466A8221CDB11F200BEB850 /* KSDateAlertController.framework */,
 				94B1E8CA1CD747F10022B64F /* ActionSheetTableView */,
 				94B1E8DF1CD747F10022B64F /* ActionSheetTableViewTests */,
 				94B1E8EA1CD747F10022B64F /* ActionSheetTableViewUITests */,
@@ -121,7 +116,6 @@
 		94B1E8CA1CD747F10022B64F /* ActionSheetTableView */ = {
 			isa = PBXGroup;
 			children = (
-				9401CB1A1CD8658C00C637AF /* KSAlert */,
 				94B1E8CB1CD747F10022B64F /* AppDelegate.swift */,
 				94B1E8F91CD748120022B64F /* MainTableViewController.swift */,
 				94B1E8CF1CD747F10022B64F /* Main.storyboard */,
@@ -160,6 +154,7 @@
 				94B1E8C41CD747F10022B64F /* Sources */,
 				94B1E8C51CD747F10022B64F /* Frameworks */,
 				94B1E8C61CD747F10022B64F /* Resources */,
+				9466A8261CDB11FA00BEB850 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -255,7 +250,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				94B1E8D61CD747F10022B64F /* LaunchScreen.storyboard in Resources */,
-				9401CB1D1CD865E500C637AF /* KSAlertView.xib in Resources */,
 				94B1E8D31CD747F10022B64F /* Assets.xcassets in Resources */,
 				94B1E8D11CD747F10022B64F /* Main.storyboard in Resources */,
 			);
@@ -283,9 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				94B1E8FA1CD748120022B64F /* MainTableViewController.swift in Sources */,
-				9401CB201CD865ED00C637AF /* KSAlertView.swift in Sources */,
 				94B1E8CC1CD747F10022B64F /* AppDelegate.swift in Sources */,
-				9401CB1E1CD865E500C637AF /* KSDialogView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,6 +421,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = ActionSheetTableView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.leapfrog.ActionSheetTableView;
@@ -440,6 +436,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = ActionSheetTableView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.leapfrog.ActionSheetTableView;

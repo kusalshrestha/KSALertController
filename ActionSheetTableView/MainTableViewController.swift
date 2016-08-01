@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import KSDateAlertController
+import KSAlertController
 
 class MainTableViewController: UITableViewController {
 
@@ -15,7 +15,6 @@ class MainTableViewController: UITableViewController {
         super.viewDidLoad()
 
     }
-
 
     func popAction(cell: UITableViewCell) {
         let alertView = KSAlertView()

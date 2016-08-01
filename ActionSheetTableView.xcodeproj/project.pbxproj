@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9466A8231CDB11F200BEB850 /* KSDateAlertController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9466A8221CDB11F200BEB850 /* KSDateAlertController.framework */; };
-		9466A8251CDB11FA00BEB850 /* KSDateAlertController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9466A8221CDB11F200BEB850 /* KSDateAlertController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		945204AD1CE484CC00B4FC85 /* KSAlertController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 945204AB1CE484C600B4FC85 /* KSAlertController.framework */; };
+		945204AE1CE484CC00B4FC85 /* KSAlertController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 945204AB1CE484C600B4FC85 /* KSAlertController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9454B17B1CEA19180066D827 /* KSAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9454B1781CEA19180066D827 /* KSAlertView.xib */; };
+		9454B17C1CEA19180066D827 /* KSDialogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9454B1791CEA19180066D827 /* KSDialogView.swift */; };
+		9454B17D1CEA19180066D827 /* KSAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9454B17A1CEA19180066D827 /* KSAlertView.swift */; };
 		94B1E8CC1CD747F10022B64F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B1E8CB1CD747F10022B64F /* AppDelegate.swift */; };
 		94B1E8D11CD747F10022B64F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94B1E8CF1CD747F10022B64F /* Main.storyboard */; };
 		94B1E8D31CD747F10022B64F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94B1E8D21CD747F10022B64F /* Assets.xcassets */; };
@@ -42,7 +45,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				9466A8251CDB11FA00BEB850 /* KSDateAlertController.framework in Embed Frameworks */,
+				945204AE1CE484CC00B4FC85 /* KSAlertController.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -50,7 +53,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		9466A8221CDB11F200BEB850 /* KSDateAlertController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KSDateAlertController.framework; sourceTree = "<group>"; };
+		945204AB1CE484C600B4FC85 /* KSAlertController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KSAlertController.framework; sourceTree = "<group>"; };
+		9454B1781CEA19180066D827 /* KSAlertView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KSAlertView.xib; sourceTree = "<group>"; };
+		9454B1791CEA19180066D827 /* KSDialogView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSDialogView.swift; sourceTree = "<group>"; };
+		9454B17A1CEA19180066D827 /* KSAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSAlertView.swift; sourceTree = "<group>"; };
 		94B1E8C81CD747F10022B64F /* ActionSheetTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ActionSheetTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94B1E8CB1CD747F10022B64F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94B1E8D01CD747F10022B64F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -71,7 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9466A8231CDB11F200BEB850 /* KSDateAlertController.framework in Frameworks */,
+				945204AD1CE484CC00B4FC85 /* KSAlertController.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,10 +98,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9454B1761CEA19180066D827 /* KSAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				9454B1771CEA19180066D827 /* DialogView */,
+				9454B17A1CEA19180066D827 /* KSAlertView.swift */,
+			);
+			path = KSAlertView;
+			sourceTree = "<group>";
+		};
+		9454B1771CEA19180066D827 /* DialogView */ = {
+			isa = PBXGroup;
+			children = (
+				9454B1781CEA19180066D827 /* KSAlertView.xib */,
+				9454B1791CEA19180066D827 /* KSDialogView.swift */,
+			);
+			path = DialogView;
+			sourceTree = "<group>";
+		};
 		94B1E8BF1CD747F10022B64F = {
 			isa = PBXGroup;
 			children = (
-				9466A8221CDB11F200BEB850 /* KSDateAlertController.framework */,
+				945204AB1CE484C600B4FC85 /* KSAlertController.framework */,
 				94B1E8CA1CD747F10022B64F /* ActionSheetTableView */,
 				94B1E8DF1CD747F10022B64F /* ActionSheetTableViewTests */,
 				94B1E8EA1CD747F10022B64F /* ActionSheetTableViewUITests */,
@@ -116,6 +140,7 @@
 		94B1E8CA1CD747F10022B64F /* ActionSheetTableView */ = {
 			isa = PBXGroup;
 			children = (
+				9454B1761CEA19180066D827 /* KSAlertView */,
 				94B1E8CB1CD747F10022B64F /* AppDelegate.swift */,
 				94B1E8F91CD748120022B64F /* MainTableViewController.swift */,
 				94B1E8CF1CD747F10022B64F /* Main.storyboard */,
@@ -250,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				94B1E8D61CD747F10022B64F /* LaunchScreen.storyboard in Resources */,
+				9454B17B1CEA19180066D827 /* KSAlertView.xib in Resources */,
 				94B1E8D31CD747F10022B64F /* Assets.xcassets in Resources */,
 				94B1E8D11CD747F10022B64F /* Main.storyboard in Resources */,
 			);
@@ -277,7 +303,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				94B1E8FA1CD748120022B64F /* MainTableViewController.swift in Sources */,
+				9454B17D1CEA19180066D827 /* KSAlertView.swift in Sources */,
 				94B1E8CC1CD747F10022B64F /* AppDelegate.swift in Sources */,
+				9454B17C1CEA19180066D827 /* KSDialogView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -100,7 +100,7 @@ typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 @class NSDate;
 @class NSCoder;
 
-SWIFT_CLASS("_TtC21KSDateAlertController11KSAlertView")
+SWIFT_CLASS("_TtC17KSAlertController11KSAlertView")
 @interface KSAlertView : UIView
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (void)showDialogWithCompletion:(void (^ _Nonnull)(NSDate * _Nullable))completion;
@@ -109,7 +109,7 @@ SWIFT_CLASS("_TtC21KSDateAlertController11KSAlertView")
 @end
 
 
-@interface KSAlertView (SWIFT_EXTENSION(KSDateAlertController))
+@interface KSAlertView (SWIFT_EXTENSION(KSAlertController))
 @end
 
 #pragma clang diagnostic pop

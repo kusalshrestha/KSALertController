@@ -1,0 +1,10 @@
+framework module KSAlertController {
+  umbrella header "KSAlertController.h"
+
+  export *
+  module * { export * }
+}
+
+module KSAlertController.Swift {
+    header "KSAlertController-Swift.h"
+}

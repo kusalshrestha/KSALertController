@@ -17,13 +17,21 @@ class MainTableViewController: UITableViewController {
     }
 
     func popAction(cell: UITableViewCell) {
-        let alertView = KSAlertView()
-        alertView.showDialog { (date) in
-            if date != nil {
-                cell.textLabel?.text = String(date!)
-            } else {
-                cell.textLabel?.text = "Date not selected"
-            }
+        let isdatePicker = false
+        if isdatePicker {
+            let alertView = KSAlertView()
+            alertView.showDialogForDatePicker(withCompletion: { (date) in
+                if date != nil {
+                    cell.textLabel?.text = String(date!)
+                } else {
+                    cell.textLabel?.text = "Date not selected"
+                }
+            })
+        } else {
+            let picker = KSAlertView(dataStrings: ["1", "2", "3", "4", "5"])
+            picker.showDialog(withCompletion: { (index) in
+                cell.textLabel?.text = String(index)
+            })
         }
     }
 

@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol KSAlertDelegate: NSObjectProtocol {
+protocol KSDialogDelegate: NSObjectProtocol {
     
     func cancelButtonAction()
     func doneButtonAction(date: NSDate)
@@ -18,7 +18,7 @@ protocol KSAlertDelegate: NSObjectProtocol {
 class KSDialogView: UIView {
     
     @IBOutlet var datePicker: UIDatePicker!
-    weak var delegate: KSAlertDelegate?
+    weak var delegate: KSDialogDelegate?
     
     override func awakeFromNib() {
         self.layer.cornerRadius = 12

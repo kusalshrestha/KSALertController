@@ -69,7 +69,7 @@ class KSAlertView: UIView {
     
 }
 
-extension KSAlertView: KSAlertDelegate {
+extension KSAlertView: KSDialogDelegate {
     
     func cancelButtonAction() {
         self.callBack(date: nil)
